@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1025905592733541936
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1664937338741573909}
+  m_Layer: 0
+  m_Name: FirePointRotate
+  m_TagString: Untagged
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1664937338741573909
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1025905592733541936}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.48, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 6279765214033331885}
+  m_Father: {fileID: 6279765213653723862}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6279765213653723855
 GameObject:
   m_ObjectHideFlags: 0
@@ -34,8 +65,8 @@ Transform:
   m_LocalPosition: {x: 0, y: -0.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1664937338741573909}
   - {fileID: 6279765214352685719}
-  - {fileID: 6279765214033331885}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -226,11 +257,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6279765214033331884}
   m_LocalRotation: {x: 0.04721475, y: 0.08028266, z: -0.0038071014, w: 0.99564606}
-  m_LocalPosition: {x: 0.503, y: -0.48, z: 0}
+  m_LocalPosition: {x: 0.503, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 6279765213653723862}
-  m_RootOrder: 1
+  m_Father: {fileID: 1664937338741573909}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 5.43, y: 9.22, z: 0}
 --- !u!50 &6279765214033331883
 Rigidbody2D:
@@ -267,6 +298,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 0}
   rotateFirePointrb: {fileID: 6279765214033331883}
+  firePointParent: {fileID: 6279765213653723855}
 --- !u!1 &6279765214352685718
 GameObject:
   m_ObjectHideFlags: 0
@@ -296,7 +328,7 @@ Transform:
   m_Children:
   - {fileID: 6279765214673242472}
   m_Father: {fileID: 6279765213653723862}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6279765214673242475
 GameObject:
